@@ -1,7 +1,7 @@
 {
-  "name": "snoutscout",
+  "name": "whoopapp",
   "version": "1.0.0",
-  "description": "SnoutScout App",
+  "description": "Whoop App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,11 +9,15 @@
   "author": "Robert Stark",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.9",
     "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
-    "mongoose": "^8.9.0"
+    "mongoose": "^8.9.0",
+    "passport": "^0.7.0",
+    "passport-oauth2": "^1.8.0"
   }
 }

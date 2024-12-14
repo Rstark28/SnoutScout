@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Registration</title>
-</head>
-<body>
-  <h1>Register</h1>
-  <form id="registerForm" action="/api/users/register" method="POST">
-    <label>Email: <input type="email" name="email" required></label><br>
-    <label>Password: <input type="password" name="password" required></label><br>
-    <label>First Name: <input type="text" name="firstName" required></label><br>
-    <label>Last Name: <input type="text" name="lastName" required></label><br>
-    <label>Age: <input type="number" name="age" required></label><br>
-    <label>Location: <input type="text" name="location" required></label><br>
-    <label>Phone Number: <input type="text" name="phoneNumber"></label><br>
-    <button type="submit">Register</button>
-  </form>
 
-  <script>
-    // You can add JavaScript validation or AJAX logic here if needed
-  </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <form id="registerForm" action="/api/users/register" method="POST">
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Password: <input type="password" name="password" required></label><br>
+        <label>First Name: <input type="text" name="firstName" required></label><br>
+        <label>Last Name: <input type="text" name="lastName" required></label><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        // You can add JavaScript validation or AJAX logic here if needed
+    </script>
 </body>
+
 </html>

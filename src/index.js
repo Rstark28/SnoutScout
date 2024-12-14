@@ -29,7 +29,7 @@ app.use(
 );
 
 // Use routes
-app.use('/api/users', userRoutes); // Register user routes
+app.use('/users', userRoutes); // Register user routes
 
 // Start the server
 const PORT = process.env.PORT || 3000;

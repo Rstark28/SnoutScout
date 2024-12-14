@@ -13,7 +13,7 @@ router.get('/login', (req, res) => {
 
 // Register a new user
 router.post('/register', async (req, res) => {
-  const { email, password, firstName, lastName, age, location, phoneNumber } = req.body;
+  const { email, password, firstName, lastName } = req.body;
 
   try {
     const newUser = new User({
@@ -21,16 +21,6 @@ router.post('/register', async (req, res) => {
       password,
       firstName,
       lastName,
-      age,
-      location,
-      phoneNumber,
-      dogInfo: {
-        name: "Buddy", // Example static dog data
-        breed: "Golden Retriever",
-        age: 4,
-        weight: 30,
-        temperament: "Friendly"
-      }
     });
 
     await newUser.save();
